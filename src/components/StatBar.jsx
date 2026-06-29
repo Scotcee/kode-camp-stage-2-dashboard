@@ -1,0 +1,24 @@
+const StatBar = ({ score, label = "Score" }) => {
+  const barColor =
+    score >= 80 ? "#4caf50" : score >= 60 ? "#ff9800" : "#f44336";
+
+  return (
+    <div className="stat-bar">
+      <p>{label}</p>
+
+      <div className="bar-container">
+        <div
+          className="bar-fill"
+          style={{
+            width: `${score}%`,
+            backgroundColor: barColor,
+          }}
+        />
+      </div>
+
+      <span>{score}</span>
+    </div>
+  );
+};
+
+export default StatBar;
