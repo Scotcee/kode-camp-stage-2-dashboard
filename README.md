@@ -102,7 +102,7 @@ npm run dev
 ---
 
 ## Live Demo
-
+https://kode-camp-stage-2-dashboard.vercel.app/
 
 
 ---
