@@ -1,18 +1,122 @@
-# React + Vite
+# Student Dashboard – KodeCamp 6.0 Stage 2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a React application built as part of the KodeCamp 6.0 Stage 2 assessment. The application displays a dashboard of student profile cards using reusable React components and demonstrates the fundamentals of React development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project focuses on component composition, props, JSX, conditional rendering, array methods, and reusable UI components without using React state.
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Features
 
-Note: This will impact Vite dev & build performances.
+* Displays a dashboard of student profiles.
+* Reusable `Header` component showing:
 
-## Expanding the ESLint configuration
+  * App title
+  * Total number of students
+  * Class average score
+* Reusable `Badge` component for:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  * Student track
+  * Student status
+  * Student grade
+* Reusable `StatBar` component showing a visual representation of each student's score.
+* Student profile cards displaying:
+
+  * Avatar
+  * Full name
+  * Track
+  * Active/Inactive status
+  * Grade
+  * Score bar
+  * Skills list
+* Displays a message when a student has no listed skills.
+* Uses component composition to keep the code clean and reusable.
+
+---
+
+## React Concepts Demonstrated
+
+* Functional Components
+* JSX
+* Props
+* Prop Destructuring
+* Component Composition
+* Conditional Rendering
+* Default Props (Default Parameters)
+* Array Mapping (`.map()`)
+* Array Reduction (`.reduce()`)
+* Template Literals
+* Dynamic `className`
+* Inline Styling
+* Reusable Components
+
+---
+
+## Project Structure
+
+```text
+src/
+│
+├── components/
+│   ├── Header.jsx
+│   ├── Badge.jsx
+│   ├── StatBar.jsx
+│   ├── StudentCard.jsx
+│   └── StudentList.jsx
+│
+├── App.jsx
+├── App.css
+├── main.jsx
+└── index.css
+```
+
+---
+
+
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## Technologies Used
+
+* React
+* Vite
+* JavaScript (ES6+)
+* CSS3
+
+---
+
+---
+
+## Live Demo
+
+
+
+---
+
+## GitHub Repository
+
+```
+https://github.com/Scotcee/kode-camp-stage-2-dashboard.git
+```
+
+---
+
+## Author
+
+**Ajemba Joseph**
+
+KodeCamp 6.0 Stage 2 Assessment
